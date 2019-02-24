@@ -59,7 +59,7 @@
         border-bottom: 1px solid whitesmoke;
         font-size: 1.5rem;
       }
-      .humidity-data, .wind-data, .wind-direct-data {
+      .humidity-data, .wind-data, .visibility-data {
         font-size: 2rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -91,7 +91,7 @@
                   <p id="desc">Thunderstorm</p>
                 </div>
                 <div id="temperature" class="col-6 text-center">
-                  75 <i id="icon-thermometer" class="wi wi-thermometer"></i>
+                  60 <i id="icon-thermometer" class="wi wi-thermometer"></i>
                 </div>
               </div>
             </div>
@@ -108,26 +108,26 @@
                 </div>
                 <div class="wind-degree col-4 text-center">
                   <i class="wi wi-direction-up-right"></i>
-                  <span>Wind Direction</span>
+                  <span>Visibility</span>
                 </div>
               </div>
               <!-- Weather Body Data -->
               <div class="row">
-                <div class="humidity-data col-4 text-center">
+                <div id="humidity" class="humidity-data col-4 text-center">
                   75%
                 </div>
-                <div class="wind-data col-4 text-center">
+                <div id="wind" class="wind-data col-4 text-center">
                   12m/h
                 </div>
-                <div class="wind-direct-data col-4 text-center">
-                  SSW
+                <div id="visibility" class="visibility-data col-4 text-center">
+                  2miles
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+      
     </div>
     <script src="js/weather.js"></script>
   </body>
