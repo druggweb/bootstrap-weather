@@ -19,7 +19,7 @@ window.onload = function() {
         let lat = jsonIp.loc.split(",")[0];
         let lon = jsonIp.loc.split(",")[1];
         console.log(lat+" "+lon);
-        let weatherUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&${appId}`;
+        let weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&${appId}`;
         httpReqWeatherAsync(weatherUrl);
       }
     }
